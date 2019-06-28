@@ -39,7 +39,7 @@ limit: giới hạn số bản ghi lấy ra, mặc định là 300;
 page: phân trang cho dữ liệu;	
 ```
 ### Api getDiscount:
--Api: ``http://devevent.adpia.vn:8080/apigetdiscount/getDiscountCode?merchant_id=shopee``;
+-Api: ``http://event.adpia.vn/apigetdiscount/getDiscountCode?merchant_id=shopee``;
 -Method: GET;
 -Api này trả về thông tin các mã giảm giá khi mua hàng tại merchant của Adpia quản lý: ví dụ như lazada, shoppe,..
 -Để lấy mã của các merchant khác chỉ cần lọc theo merchant_id của họ là được
