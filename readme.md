@@ -49,3 +49,7 @@ page: phân trang cho dữ liệu;
 	end_date : YYYYMMDD; 
 	affiliate_id : tạo link chinsg xác để lấy hoa hồng;
 ```
+### Api get All Discount:
+-Api: ``http://event.adpia.vn/apigetdiscount/getDiscountAll``;
+-Method: GET;
+-Api này trả về thông tin tất cả các mã giảm giá khi mua hàng tại merchant của Adpia quản lý: ví dụ như lazada, shoppe,..
