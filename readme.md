@@ -42,7 +42,19 @@ page: phân trang cho dữ liệu;
 Cách sử dụng giống API getConversions/Dành cho merchant khi muốn lấy đơn hàng của mình
 -Api: `` http://event.adpia.vn/apiv2/getConversions``;
 -method: POST;
-$token = base64_encode('merchant_id:password'); 
+$token = base64_encode('merchant_id:password');
+ - Api yêu cầu các trường sau:
+```bash
+token: đoạn mã này được mã hóa dạng base64 từ tài khoản và mật khẩu và bắt buộc phải có ,ví dụ: 
+	$token = base64_encode('account_id:password'); 
+sdate: giới hạn ngày , ví dụ: 20190612, bắt buộc phải có;
+edate: giới hạn ngày đầu trên, bắt buộc phải có; 
+affiliate: Affiliate ID / Tùy chọn;
+status: trạng thái chỉ để lọc kết quả;
+order_code: mã đặt hàng lọc kết quả;
+limit: giới hạn số bản ghi lấy ra, mặc định là 300;
+page: phân trang cho dữ liệu;	
+```
 
 ### Api getDiscount:
 -Api: ``http://event.adpia.vn/apigetdiscount/getDiscountCode?merchant_id=shopee``;
