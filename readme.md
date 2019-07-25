@@ -38,6 +38,12 @@ order_code: mã đặt hàng lọc kết quả;
 limit: giới hạn số bản ghi lấy ra, mặc định là 300;
 page: phân trang cho dữ liệu;	
 ```
+### Api getMerchantConversions
+Cách sử dụng giống API getConversions/Dành cho merchant khi muốn lấy đơn hàng của mình
+-Api: `` http://event.adpia.vn/apiv2/getConversions``;
+-method: POST;
+$token = base64_encode('merchant_id:password'); 
+
 ### Api getDiscount:
 -Api: ``http://event.adpia.vn/apigetdiscount/getDiscountCode?merchant_id=shopee``;
 -Method: GET;
