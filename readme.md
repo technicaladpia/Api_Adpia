@@ -55,6 +55,17 @@ order_code: mã đặt hàng lọc kết quả;
 limit: giới hạn số bản ghi lấy ra, mặc định là 300;
 page: phân trang cho dữ liệu;	
 ```
+### Api productList
+-Api: `` http://event.adpia.vn/apiv2/productList``;
+-method: POST;
+- Param:
+```bash
+token: đoạn mã này được mã hóa dạng base64 từ tài khoản và mật khẩu và bắt buộc phải có ,ví dụ: 
+	$token = base64_encode('account_id:password'); 
+merchant_id: tên của merchant cũng bắt buộc phải có;
+limit: giới hạn số bản ghi lấy ra, mặc định là 500;
+page: phân trang cho dữ liệu;	
+```
 
 ### Api getDiscount:
 -Api: ``http://event.adpia.vn/apigetdiscount/getDiscountCode?merchant_id=shopee``;
