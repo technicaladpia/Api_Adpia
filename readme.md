@@ -62,11 +62,50 @@ page: phân trang cho dữ liệu;
 ```bash
 token: đoạn mã này được mã hóa dạng base64 từ tài khoản và mật khẩu và bắt buộc phải có ,ví dụ: 
 	$token = base64_encode('account_id:password'); 
-merchant_id: tên của merchant cũng bắt buộc phải có;
+merchant_id: tên của merchant không bắt buộc;
+cate:  Category ID (Không bắt buộc)
 limit: giới hạn số bản ghi lấy ra, mặc định là 500;
-page: phân trang cho dữ liệu;	
+page: phân trang cho dữ liệu;
 ```
-
+** Bổ sung danh sách Category Code
+```bash
+ART	Nghệ thuật, thủ công
+BS	Sách, Văn phòng phẩm
+CM	Ô tô,Xe máy
+CMR	Camera / Máy quay phim
+CO	Khóa học
+DL	Du lịch, đặt phòng & Spa
+DS	Thiết bị và phụ kiện
+DT	Điện thoại
+DV	Dịch vụ, Voucher
+FA	Thời trang
+FO	Thực phẩm
+FU	Đồ gia dụng
+GD	Điện tử gia dụng
+HB	Khỏe đẹp
+HF	Câu cá, săn bắn
+HK	Nhà bếp
+HL	Nhà cửa, đời sống
+IA	Internet, software
+IB	Bảo hiểm, ngân hàng
+IS	Công nghiệp và khoa học
+JS	Thiết bị vệ sinh, vệ sinh
+LT	Laptop
+MB	Mẹ-Bé
+MI	Âm nhạc, nhạc cụ
+MT	Máy tính
+MTB	Máy tính bảng
+OTHER	Khác
+PH	Dụng cụ cầm tay và thiết bị điện
+PS	Thú nuôi
+RE	Bất động sản
+SK	Sức khỏe, y tế
+SP	Thể thao, dã ngoại
+SW	Phần mềm
+TBDT	Thiết bị điện tử
+TG	Đồ chơi
+VG	Video Games
+```
 ### Api getDiscount:
 -Api: ``http://event.adpia.vn/apigetdiscount/getDiscountCode?merchant_id=shopee``;
 -Method: GET;
