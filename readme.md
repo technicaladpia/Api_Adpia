@@ -22,7 +22,8 @@ Mỗi api mà adpia cung cấp đều có code minh họa
 	`sales` :tổng giá giảm;
 	`cnt` : số;
 	`customer`: tên khách hàng;
-	`ip` : địa chỉ ip đăng nhập; 
+	`ip` : địa chỉ ip đăng nhập;
+	`aff_sub`: Additional information (sub param trên tracking link)
 }
 
 ```
