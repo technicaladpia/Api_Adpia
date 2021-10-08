@@ -2,7 +2,7 @@
 ### Hướng dẫn sử dụng
 Mỗi api mà adpia cung cấp đều có code minh họa
 ### Api getConversions
--Api: `` http://event.adpia.vn/apiv2/getConversions``;
+-Api: `` https://event.adpia.vn/apiv2/getConversions``;
 -method: POST;
 - Api này trả về các trường sau:
 ```bash
@@ -41,7 +41,7 @@ page: phân trang cho dữ liệu;
 ```
 ### Api getMerchantConversions
 Cách sử dụng giống API getConversions/Dành cho merchant khi muốn lấy đơn hàng của mình
--Api: `` http://event.adpia.vn/apiv2/getConversions``;
+-Api: `` https://event.adpia.vn/apiv2/getConversions``;
 -method: POST;
 $token = base64_encode('merchant_id:password');
  - Api yêu cầu các trường sau:
@@ -57,7 +57,7 @@ limit: giới hạn số bản ghi lấy ra, mặc định là 300;
 page: phân trang cho dữ liệu;	
 ```
 ### Api productList
--Api: `` http://event.adpia.vn/apiv2/productList``;
+-Api: `` https://event.adpia.vn/apiv2/productList``;
 -method: POST;
 - Param:
 ```bash
@@ -108,7 +108,7 @@ TG	Đồ chơi
 VG	Video Games
 ```
 ### Api getDiscount:
--Api: ``http://event.adpia.vn/apigetdiscount/getDiscountCode?merchant_id=shopee``;
+-Api: ``https://event.adpia.vn/apigetdiscount/getDiscountCode?merchant_id=shopee``;
 -Method: GET;
 -Api này trả về thông tin các mã giảm giá khi mua hàng tại merchant của Adpia quản lý: ví dụ như lazada, shoppe,..
 -Để lấy mã của các merchant khác chỉ cần lọc theo merchant_id của họ là được
@@ -119,6 +119,6 @@ VG	Video Games
 	affiliate_id : tạo link chinsg xác để lấy hoa hồng;
 ```
 ### Api get All Discount:
--Api: ``http://event.adpia.vn/apigetdiscount/getDiscountAll``;
+-Api: ``https://event.adpia.vn/apigetdiscount/getDiscountAll``;
 -Method: GET;
 -Api này trả về thông tin tất cả các mã giảm giá khi mua hàng tại merchant của Adpia quản lý: ví dụ như lazada, shoppe,..
