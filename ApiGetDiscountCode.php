@@ -1,6 +1,6 @@
 <?php 
 	// add api getCode to curl. To fillter you can change value of merchant_id to get discount code of other merchant, you can add fields: start_date value YYYYMMDD (20190612), end_date to get by date; affiliate_id to get link exactly  
-	$curl = curl_init('http://event.adpia.vn/apigetdiscount/getDiscountCode?merchant_id=shopee');
+	$curl = curl_init('https://event.adpia.vn/apigetdiscount/getDiscountCode?merchant_id=shopee');
 	// call api getCode
 	curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 	// excute curl to get data
